@@ -1,0 +1,27 @@
+.one-input {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart {
+    font-size: 28px;
+}
+
+#cart h2{
+    font-size: 62px;
+}
+
+#cart .empty {
+    color: var(--fourth-color);
+}
+
+#info {
+    color: var(--secondary-color)
+}
+
+@media only screen and (max-width: 900px) {
+    .box#not-logged {
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,6 @@
+#header-index {
+    height: 100dvh;
+    background-image: linear-gradient(#00000011, var(--primary-color)), url('images/bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

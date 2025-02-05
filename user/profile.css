@@ -1,0 +1,16 @@
+.container-password {
+    gap: 50px;
+}
+
+.container-password #welcome {
+    font-size: 64px;
+}
+
+.container-password #logout-bin {
+    display: flex;
+    gap: 32px;
+}
+
+.container-password #logout-bin a {
+    font-size: 20px;
+}

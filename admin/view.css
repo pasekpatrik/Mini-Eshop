@@ -1,0 +1,90 @@
+#add {
+    width: 70px;
+    height: 70px;
+
+    font-size: 46px;
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+    box-shadow: var(--shadow);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 36px;
+    right: 36px;
+
+    transition: all .3s;
+}
+
+.litle {
+    font-size: 12px;
+}
+
+.container .box h2 {
+    font-size: 36px;
+    color: var(--secondary-color);
+}
+
+.one-product-user {
+    width: 300px;
+    height: 50px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+
+    color: var(--secondary-color);
+
+    background-color: var(--third-color);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    transition: all .3s;
+}
+
+.one-product-user .identifacion {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.one-product-user a {
+    color: var(--secondary-color);
+    transition: all .3s;
+}
+
+.scroll {
+    height: 70vh;
+    width: 80%;
+    padding: 16px 0 0 16px;
+
+    border: 3px solid var(--secondary-color);
+    border-radius: var(--radius);
+
+    overflow-y: scroll;
+    scrollbar-color: var(--secondary-color) #00000000;
+}
+
+@media (hover:hover) {
+    #add:hover {
+        scale: 1.05;
+    }
+
+    .one-product-user:hover {
+        scale: 1.05;
+    }
+
+    .one-product-user a:hover {
+        color: var(--primary-color);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        padding: 20dvh 0 0 0;
+    }
+}

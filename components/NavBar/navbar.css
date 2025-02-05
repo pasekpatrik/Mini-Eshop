@@ -1,0 +1,119 @@
+.panel {
+    height: 100px;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+
+    box-shadow: var(--shadow);
+    background-color: var(--third-color);
+    z-index: 2;
+}
+
+.panel-nameday {
+    height: 30px;
+    width: 100%;
+    padding: 0 12px;
+
+    font-size: 12px;
+    color: var(--primary-color);
+
+    display: flex;
+    align-items: center;
+}
+
+.navBar {
+    height: 70px;
+    width: 100%;
+
+    font-weight: 500;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 60px;
+}
+
+.nav-menu {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.container-signin {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.navBar ul li a {
+    transition: all 0.3s;
+    color: var(--secondary-color);
+}
+
+.navBar ul li a:hover {
+    color: var(--fourth-color);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 8px auto;
+    border-radius: 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        order: 1;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(10.8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-10.8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 100px;
+        gap: 25px;
+        padding: 20px;
+        flex-direction: column;
+        background-color: var(--third-color);
+        width: 100%;
+        text-align: center;
+        box-shadow: none;
+        transition: 0.3s;
+    }
+
+    .navBar ul li {
+        margin: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
